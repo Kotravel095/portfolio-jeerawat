@@ -9,7 +9,10 @@ export default {
   theme: {
     extend: {},
     daisyui: {
-      themes: ["light", "dark", "cupcake"],
+      themes: [],
+    },
+    fontFamily: {
+
     },
   },
   plugins: [

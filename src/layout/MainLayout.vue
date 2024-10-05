@@ -4,9 +4,11 @@ import MainFooter from './MainFooter.vue';
 </script>
 
 <template>
-    <div>
-        <MainHeader class="md:pl-14 md:pr-14 pt-5" />
+    <div class="pt-2 pl-6 pr-6 bg-white" >
+        <MainHeader class="bg-white" />
         <slot></slot>
+    </div>
+    <div class="pt-20 bg-white">
         <MainFooter />
     </div>
 

@@ -1,10 +1,10 @@
 <template>
-    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+    <footer class="footer footer-center bg-black rounded p-10 text-white rounded-none">
     <nav class="grid grid-flow-col gap-4">
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
+        <a class="link link-hover color-white">About Me</a>
+        <a class="link link-hover">Skills</a>
+        <a class="link link-hover">Project</a>
+        <a class="link link-hover">Contact me</a>
     </nav>
     <nav>
         <div class="grid grid-flow-col gap-4">
