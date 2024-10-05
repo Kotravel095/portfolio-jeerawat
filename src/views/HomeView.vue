@@ -1,7 +1,10 @@
 <script setup>
-import '../index.css'
+import MainLayout from '@/layout/MainLayout.vue';
+import HeroComponent from '@/components/HeroComponent.vue';
 </script>
 
 <template>
-<button class="btn btn-primary">Button2</button>
+  <MainLayout>
+    <HeroComponent />
+  </MainLayout>
 </template>
