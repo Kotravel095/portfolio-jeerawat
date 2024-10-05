@@ -4,7 +4,7 @@ import MainFooter from './MainFooter.vue';
 </script>
 
 <template>
-    <div class="pt-2 pl-6 pr-6 bg-white" >
+    <div class="pt-2 bg-white" >
         <MainHeader class="bg-white" />
         <slot></slot>
     </div>
