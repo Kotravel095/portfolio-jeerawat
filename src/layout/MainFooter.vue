@@ -1,11 +1,11 @@
 <template>
     <footer class="footer footer-center bg-black p-10 text-white rounded-none">
-    <nav class="grid grid-flow-col gap-4">
+    <!-- <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover color-white">About Me</a>
         <a class="link link-hover">Skills</a>
         <a class="link link-hover">Project</a>
         <a class="link link-hover">Contact me</a>
-    </nav>
+    </nav> -->
     <nav>
         <div class="grid grid-flow-col gap-4">
         <a>
