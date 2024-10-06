@@ -1,6 +1,6 @@
 <template>
 <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 justify-items-stretch content-center pt-10 pl-6 pr-6">
-    <div class="w-[100%] h-60 sm:h-[100%] row-span-3 content-end">
+    <div v-motion-pop class="w-[100%] h-60 sm:h-[100%] row-span-3 content-end">
         <svg class="w-full h-full pr-10" viewBox="0 0 889 596" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1508_655)">
             <path d="M387.457 438.674C311.494 481.449 354.27 586.913 379.345 591.338C398.658 594.746 462.149 592.792 492.921 591.338L731.134 415.074L591.745 395.899C548.97 395.899 448.228 404.454 387.457 438.674Z" fill="white"/>
@@ -40,15 +40,26 @@
         </svg>
 
     </div>
-    <div class="w-[100%] h-40 content-end text-3xl justify-self-center text-black">
+    <div 
+    v-motion
+    :initial="{ opacity: 0, x: 100 }" 
+    :enter="{ opacity: 1, x: 0, scale: 1 }"
+    :duration="1000" 
+    class="w-[100%] h-40 content-end text-3xl justify-self-center text-black">
         <span>Hello I’am</span><span class="font-black pl-4">Jeerawat</span><br>
         <span class="font-black">Backend</span><span class="pl-4 rubik-bubbles-regular">Developer</span><br>
         <span>Based In</span><span class="font-black pl-4">Thailand.</span>
     </div>
-    <div class="w-[100%] h-52 sm:h-64 lg:h-40 text-black">
+    <div 
+    v-motion
+    :initial="{ opacity: 0, x: 100 }" 
+    :enter="{ opacity: 1, x: 0, scale: 1 }"
+    :duration="1000"  
+    :delay="1000"
+    class="w-[100%] h-52 sm:h-64 lg:h-40 text-black">
         Hello! I'm Jeerawat, a backend developer with experience in creating websites tailored to client needs. My work includes ERP systems, eCommerce platforms, content management systems, and company websites, among others. I built this site to showcase my projects and portfolio. Thank you for visiting!
     </div>
-    <div class="w-[100%] h-20 text-black">
+    <div v-motion-slide-visible-once-bottom class="w-[100%] h-20 text-black">
         <span class="pl-4">
             <button class="btn btn-square bg-white w-12 h-5 sm:w-12 sm:h-10 rounded-md hover:fill-white hover:bg-black">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-full h-full" viewBox="0 0 30 30">
